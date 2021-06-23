@@ -1,0 +1,141 @@
+/* Basic styling */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #151f39;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.main-navigation a {
+  color: #e7ecef;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.5s ease;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu a {
+  padding: 0.5rem 1.25rem;
+  display: block;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #735cdd;
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  color: #e7ecef;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-item-mobile {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  background: linear-gradient(45deg, #151f39, #121b33);
+  height: 100vh;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-h1 {
+  color: #e7ecef;
+  font-size: 6rem;
+  font-family: "Orbitron", sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.hero-h2 {
+  color: #e7ecef;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* MOBILE MENU */
+  .menu-toggle {
+    display: block;
+    z-index: 99;
+  }
+  .menu {
+    background: linear-gradient(45deg, #151f39, #121b33);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(-100%);
+  }
+
+  .menu.is-toggled {
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .menu-item-mobile {
+    display: block;
+  }
+}
