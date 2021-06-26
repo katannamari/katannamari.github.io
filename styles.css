@@ -179,6 +179,74 @@ body {
   font-weight: lighter;
 }
 
+/* PORTFOLIO */
+
+.portfolio {
+  display: flex;
+  height: 100vh;
+}
+
+.portfolio-container {
+  background: #151f39;
+  width: 100%;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.portfolio-heading {
+  font-size: 5rem;
+  font-family: "Orbitron", sans-serif;
+  color: #e7ecef;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.portfolio-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  list-style-type: none;
+}
+
+.portfolio-item {
+  width: 33.33%;
+  display: flex;
+  min-height: 15rem;
+  align-items: center;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+  justify-content: center;
+}
+
+.portfolio-item-content {
+  color: #0a0f1c;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  transition: 0.5s;
+  border-radius: 2rem;
+  background-color: #e7ecef;
+}
+
+.portfolio-item-content:hover {
+  background: #ed254e;
+  color: #e7ecef;
+}
+
 /* MEDIA QUERIES */
 
 /* DESKTOP */
@@ -231,6 +299,18 @@ body {
 
   .about-text h2 {
     font-size: 2rem;
+  }
+
+  /* PORTFOLIO */
+  .portfolio-list {
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  .portfolio-item {
+    margin-left: 0;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -285,6 +365,16 @@ body {
 
   .hero-h2 {
     font-size: 1.5rem;
+  }
+
+  /* PORTFOLIO */
+
+  .portfolio-heading {
+    font-size: 2.5rem;
+  }
+  .portfolio-item {
+    width: 100%;
+    margin-left: 0;
   }
 }
 /* MOBILE VERTICAL */
