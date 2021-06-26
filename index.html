@@ -19,28 +19,30 @@
   <body>
     <div class="site">
       <!-- NAVIGATION-->
-      <header class="container header">
-        <nav class="main-navigation">
-          <div>
-            <a href="#">Katannamari</a>
-          </div>
-          <button type="button" aria-label="Avaa valikko" class="menu-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul class="menu" role="menubar">
-            <li class="menu-item-mobile"><a href="#">Katannamari</a></li>
-            <li>
-              <a href="#about">Tietoja minusta</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li><a href="#">CV</a></li>
-            <!-- <li class="toggle">
+      <header class="header">
+        <div class="container">
+          <nav class="main-navigation">
+            <div>
+              <a href="#">Katannamari</a>
+            </div>
+            <button type="button" aria-label="Avaa valikko" class="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu" role="menubar">
+              <li class="menu-item-mobile"><a href="#">Katannamari</a></li>
+              <li>
+                <a href="#about">Tietoja minusta</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li><a href="#cv">CV</a></li>
+              <!-- <li class="toggle">
                 <a href="#"><i class="fas fa-bars"></i></a>
               </li> -->
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
         <button onclick="scrollToTop()" id="scroll-button" title="Sivun alkuun">
@@ -78,21 +80,21 @@
           <div class="container portfolio-container">
             <h2 class="portfolio-heading">Tässä muutamia projektejani</h2>
             <ul class="portfolio-list">
-              <li class="portolio-item">
+              <li class="portfolio-item">
                 <div class="portfolio-item-content">
                   <h3>CSS-animaatioita</h3>
                   <p>Erilaisia CSS:n avulla tehtyjä siirtymiä ja efektejä</p>
                   <p>[placeholder]</p>
                 </div>
               </li>
-              <li class="portolio-item">
+              <li class="portfolio-item">
                 <div class="portfolio-item-content">
                   <h3>React-lista ja filtteröinti</h3>
                   <p>Datan hakeminen ja listaus käyttäen Reactia</p>
                   <p>[placeholder]</p>
                 </div>
               </li>
-              <li class="portolio-item">
+              <li class="portfolio-item">
                 <div class="portfolio-item-content">
                   <h3>Whack-a-mole</h3>
                   <p>Whack-a-mole-peli JavaScriptin avulla</p>
@@ -102,6 +104,7 @@
             </ul>
           </div>
         </section>
+        <section id="cv" class="cv"></section>
       </main>
     </div>
 

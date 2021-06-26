@@ -28,6 +28,7 @@ body {
   left: 0;
   right: 0;
   z-index: 9;
+  background: #151f39;
 }
 
 .main-navigation {
@@ -104,8 +105,8 @@ body {
 /* HERO */
 .hero {
   display: flex;
-  background: linear-gradient(45deg, #151f39, #121b33);
-  height: 100vh;
+  background: #151f39;
+  min-height: 100vh;
 }
 
 .hero-container {
@@ -132,18 +133,19 @@ body {
 
 /* ABOUT */
 .about {
+  position: relative;
+  min-height: 100vh;
   display: flex;
-  height: 100vh;
+  background: #e7ecef;
 }
 
 .about-container {
   display: flex;
-  background: linear-gradient(to right, #ed254e 50%, #e7ecef 50%);
   width: 100%;
-  overflow: auto;
   align-items: center;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+  padding: 0;
+  position: static;
 }
 
 /* Image section */
@@ -151,13 +153,16 @@ body {
   display: flex;
   justify-content: center;
   width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .img-responsive {
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 5%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* About text description */
@@ -183,7 +188,7 @@ body {
 
 .portfolio {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .portfolio-container {
@@ -210,7 +215,6 @@ body {
 .portfolio-list {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
   text-align: center;
@@ -264,6 +268,12 @@ body {
 /* TABLET HORIZONTAL */
 @media screen and (max-width: 992px) {
   /* HERO TEXT */
+
+  .hero {
+    min-height: unset;
+    padding: 2rem;
+  }
+
   .hero-h1 {
     font-size: 4rem;
   }
@@ -273,22 +283,25 @@ body {
   }
 
   /* ABOUT */
+
+  .about {
+    min-height: unset;
+    background: none;
+  }
   .about-container {
     flex-direction: column;
     background: none;
   }
 
   .about-img {
+    position: relative;
     background-color: #ed254e;
     width: 100%;
+    padding: 2rem;
   }
 
   .img-responsive {
-    width: 100%;
     max-width: 300px;
-    height: auto;
-    padding: 2rem;
-    border-radius: 5%;
   }
 
   .about-text {
@@ -370,7 +383,7 @@ body {
   /* PORTFOLIO */
 
   .portfolio-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .portfolio-item {
     width: 100%;
