@@ -1,3 +1,5 @@
+// MOBILE MENU
+
 const menuToggle = document.querySelector(".menu-toggle");
 const mainMenu = document.querySelector(".menu");
 
@@ -19,3 +21,28 @@ const toggleMenu = () => {
 };
 
 menuToggle.addEventListener("click", toggleMenu, false);
+
+// SCROLL BUTTON
+
+const scrollButton = document.getElementById("scroll-button");
+
+window.onscroll = function () {
+  scrollVisibility();
+};
+
+// Checks the position of the scroll and whether to show the button
+const scrollVisibility = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+};
+
+// Takes user to top of the page when clicking the button
+const scrollToTop = () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+};

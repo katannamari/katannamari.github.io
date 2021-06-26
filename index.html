@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="site">
-      <!-- NAVIGATION + HERO -->
+      <!-- NAVIGATION-->
       <header class="container header">
         <nav class="main-navigation">
           <div>
@@ -30,7 +30,7 @@
           <ul class="menu" role="menubar">
             <li class="menu-item-mobile"><a href="#">Katannamari</a></li>
             <li>
-              <a href="#">Tietoja minusta</a>
+              <a href="#about">Tietoja minusta</a>
             </li>
             <li>
               <a href="#">Portfolio</a>
@@ -43,11 +43,35 @@
         </nav>
       </header>
       <main>
+        <button onclick="scrollToTop()" id="scroll-button" title="Sivun alkuun">
+          <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- HERO -->
         <section class="hero">
-          <title>Katannamari</title>
           <div class="container hero-container">
             <h1 class="hero-h1">Katariina Varanka</h1>
             <h2 class="hero-h2">Web-kehittäjä</h2>
+          </div>
+        </section>
+        <!-- ABOUT -->
+        <section id="about" class="about">
+          <div class="container about-container">
+            <div class="about-img">
+              <img
+                src="./images/userpic.jpeg"
+                alt="Esittelykuva"
+                class="img-responsive"
+              />
+            </div>
+            <div class="about-text">
+              <h2>Tervehdys!</h2>
+              <p>Olen kesällä 2021 valmistuva IT-tradenomi Oulusta.</p>
+              <p>Tykkään työskennellä käyttöliittymien parissa.</p>
+              <p>
+                Koodauksen lisäksi tykkään pelata videopelejä, laulaa sekä
+                tanssia.
+              </p>
+            </div>
           </div>
         </section>
       </main>
