@@ -46,3 +46,5 @@ const scrollToTop = () => {
     behavior: "smooth",
   });
 };
+
+// CV-DATA ARRAY
