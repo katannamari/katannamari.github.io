@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background: #151f39;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -43,6 +44,7 @@ body {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   transition: all 0.5s ease;
+  /* scroll-behavior: smooth; */
 }
 
 .menu {
