@@ -270,10 +270,6 @@ body {
   padding-right: 1rem;
 }
 
-.cv-column h3 {
-  font-family: "Orbitron", sans-serif;
-}
-
 /* .cv-container {
   display: flex;
   width: 100%;
@@ -300,6 +296,31 @@ body {
   color: #e7ecef;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
+}
+
+.cv-column {
+  width: calc(50% - 2rem);
+}
+
+.cv-column h3 {
+  font-family: "Orbitron", sans-serif;
+}
+
+.cv-item {
+  list-style-type: none;
+  text-align: left;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.cv-item-duration {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.cv-item-description {
+  font-size: 1.5rem;
+}
 
 /* MEDIA QUERIES */
 

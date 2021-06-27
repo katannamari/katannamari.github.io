@@ -10,7 +10,6 @@ const education = [
     description: "Ylioppilastutkinto",
   },
 ];
-window.localStorage.setItem("education", JSON.stringify(education));
 // export const koulutus = [
 //   {
 //     nimi: "Oulun Ammattikorkeakoulu - Tradenomi (AMK)",

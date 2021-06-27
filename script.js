@@ -47,4 +47,35 @@ const scrollToTop = () => {
   });
 };
 
-// CV-DATA ARRAY
+// CV-DATA
+
+const education = [
+  {
+    name: "Oulun Ammattikorkeakoulu - Tradenomi (AMK)",
+    duration: "2017 - 2021",
+    description: "Tietojenkäsittelyn koulutusohjelma",
+  },
+  {
+    name: "Utajärven lukio",
+    duration: "2007-2010",
+    description: "Ylioppilastutkinto",
+  },
+];
+
+let i, len, text;
+
+for (i = 0, len = education.length, text = ""; i < len; i++) {
+  text +=
+    "<ul class='cv-item'><li>" +
+    education[i].name +
+    "</li>" +
+    "<li class='cv-item-duration'>" +
+    education[i].duration +
+    "</li>" +
+    "<li class='cv-item-description'>" +
+    education[i].description +
+    "</li></ul>";
+  console.log(education);
+}
+
+document.getElementById("education").innerHTML = text;
