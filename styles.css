@@ -415,6 +415,21 @@ body {
   /* CV */
   .cv-columns {
     flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .cv-h2 {
+    text-align: center;
+  }
+
+  .cv-item-duration {
+    text-transform: revert;
+    font-size: 1.1rem;
+  }
+
+  .cv-item-description {
+    font-size: 1rem;
   }
 }
 
@@ -458,6 +473,12 @@ body {
   .hero-h2 {
     font-size: 1.5rem;
   }
+
+  /* CV */
+  .cv-column {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 
 /* MOBILE HORIZONTAL */
@@ -479,6 +500,15 @@ body {
   .portfolio-item {
     width: 100%;
     margin-left: 0;
+  }
+
+  /* CV */
+  .cv-h2 {
+    font-size: 2rem;
+  }
+
+  .cv-column h3 {
+    font-size: 1.5rem;
   }
 }
 /* MOBILE VERTICAL */
