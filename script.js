@@ -200,3 +200,14 @@ createMarkup(skills, "skills");
 createMarkup(education, "education");
 createMarkup(work, "work");
 createMarkup(volunteerWork, "volunteerWork");
+
+// FOOTER
+
+const countYear = () => {
+  const year = new Date().getFullYear();
+  const element = document.querySelector("#copyright");
+
+  element.innerHTML = year;
+};
+
+countYear();

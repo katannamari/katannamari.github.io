@@ -337,6 +337,42 @@ body {
   font-size: 1.5rem;
 }
 
+/* FOOTER */
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #0a0f1c;
+}
+
+.footer-text {
+  display: flex;
+  color: #e7ecef;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin-left: 2rem;
+}
+.footer-text p {
+  padding: 0.2rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  color: #e7ecef;
+  margin-right: 4rem;
+  padding-top: 0.5rem;
+}
+.footer-icons a {
+  color: inherit;
+}
+
+.footer-icon {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
 /* MEDIA QUERIES */
 
 /* DESKTOP */
