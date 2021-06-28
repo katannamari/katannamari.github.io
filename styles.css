@@ -324,6 +324,10 @@ body {
   color: #735cdd;
 }
 
+.cv-item a:visited {
+  color: #e7ecef;
+}
+
 .cv-item-duration {
   font-size: 1rem;
   text-transform: uppercase;
