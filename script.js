@@ -166,81 +166,37 @@ const skills = [
   },
 ];
 
-// Cv Array loop
-let contactMarkup = "";
-let langMarkup = "";
-let skillsMarkup = "";
-let eduMarkup = "";
-let workMarkup = "";
-let volunteerMarkup = "";
+// Function gets cv data and creates html markup based on it,
+// prints it in the correct spot based on id
+const createMarkup = (data, id) => {
+  let markup = "";
+  const element = document.querySelector(`#${id}`);
 
-// Contact Array
-for (let i = 0; i < contactInfo.length; i++) {
-  contactMarkup +=
-    "<ul class='cv-item'><li>" +
-    contactInfo[i].platform +
-    "</li>" +
-    "<li class='cv-item-duration'>" +
-    contactInfo[i].url +
-    "</li></ul>";
-}
-// Languages Array
-for (let i = 0; i < languages.length; i++) {
-  langMarkup +=
-    "<ul class='cv-item'><li>" +
-    languages[i].language +
-    "</li>" +
-    "<li class='cv-item-description'>" +
-    languages[i].competency +
-    "</li></ul>";
-}
-// Skillset Array
-for (let i = 0; i < skills.length; i++) {
-  skillsMarkup += "<ul class='cv-item'><li>" + skills[i].name + "</li></ul>";
-}
-// Education Array
-for (let i = 0; i < education.length; i++) {
-  eduMarkup +=
-    "<ul class='cv-item'><li>" +
-    education[i].name +
-    "</li>" +
-    "<li class='cv-item-duration'>" +
-    education[i].duration +
-    "</li>" +
-    "<li class='cv-item-description'>" +
-    education[i].description +
-    "</li></ul>";
-}
-// Work experience Array
-for (let i = 0; i < work.length; i++) {
-  workMarkup +=
-    "<ul class='cv-item'><li>" +
-    work[i].name +
-    "</li>" +
-    "<li class='cv-item-duration'>" +
-    work[i].duration +
-    "</li>" +
-    "<li class='cv-item-description'>" +
-    work[i].description +
-    "</li></ul>";
-}
-// Volunteer work Array
-for (let i = 0; i < volunteerWork.length; i++) {
-  volunteerMarkup +=
-    "<ul class='cv-item'><li>" +
-    volunteerWork[i].name +
-    "</li>" +
-    "<li class='cv-item-duration'>" +
-    volunteerWork[i].duration +
-    "</li>" +
-    "<li class='cv-item-description'>" +
-    volunteerWork[i].description +
-    "</li></ul>";
-}
+  for (let i = 0; i < data.length; i++) {
+    markup += '<ul class="cv-item">';
+    // Ternary operator to check which cv data is being processed and what to print
+    markup += data[i].platform
+      ? `<li class="cv-item"><a href="https://${data[i].url}" target="_blank" rel="noopener noreferrer"><i class="${data[i].faIcon}"></i> ${data[i].url}</a></li>`
+      : "";
+    markup += data[i].language
+      ? `<li class="cv-item">${data[i].language} - ${data[i].competency}</li>`
+      : "";
+    markup += data[i].name ? `<li class="cv-item">${data[i].name}</li>` : "";
+    markup += data[i].duration
+      ? `<li class="cv-item-duration">${data[i].duration}</li>`
+      : "";
+    markup += data[i].description
+      ? `<li class="cv-item-description">${data[i].description}</li>`
+      : "";
+    markup += "</ul>";
+  }
 
-document.getElementById("contact").innerHTML = contactMarkup;
-document.getElementById("languages").innerHTML = langMarkup;
-document.getElementById("skills").innerHTML = skillsMarkup;
-document.getElementById("education").innerHTML = eduMarkup;
-document.getElementById("work").innerHTML = workMarkup;
-document.getElementById("volunteerWork").innerHTML = volunteerMarkup;
+  element.innerHTML = markup;
+};
+
+createMarkup(contactInfo, "contact");
+createMarkup(languages, "languages");
+createMarkup(skills, "skills");
+createMarkup(education, "education");
+createMarkup(work, "work");
+createMarkup(volunteerWork, "volunteerWork");

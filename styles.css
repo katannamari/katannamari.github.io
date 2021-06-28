@@ -313,6 +313,17 @@ body {
   padding-right: 2rem;
 }
 
+.cv-item a {
+  text-decoration: none;
+  color: #e7ecef;
+}
+
+.cv-item a:hover,
+.cv-item a:focus {
+  transition: 0.3s;
+  color: #735cdd;
+}
+
 .cv-item-duration {
   font-size: 1rem;
   text-transform: uppercase;
@@ -395,6 +406,11 @@ body {
     width: 50%;
     align-items: center;
     justify-content: center;
+  }
+
+  /* CV */
+  .cv-columns {
+    flex-direction: column;
   }
 }
 
