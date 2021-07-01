@@ -237,6 +237,9 @@ body {
   padding-right: 1rem;
   justify-content: center;
 }
+.portfolio-item a {
+  text-decoration: none;
+}
 
 .portfolio-item-content {
   color: #0a0f1c;
@@ -256,7 +259,6 @@ body {
 /* CV */
 .cv {
   display: flex;
-  /* min-height: 100vh; */
 }
 
 .cv-h2 {
