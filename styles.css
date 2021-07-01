@@ -136,7 +136,7 @@ body {
 /* ABOUT */
 .about {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   background: #e7ecef;
 }
@@ -190,7 +190,7 @@ body {
 
 .portfolio {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .portfolio-container {
@@ -256,7 +256,7 @@ body {
 /* CV */
 .cv {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .cv-h2 {
