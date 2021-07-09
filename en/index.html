@@ -1,0 +1,165 @@
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Katannamari</title>
+  </head>
+  <body>
+    <div class="site">
+      <!-- NAVIGATION-->
+      <header class="header">
+        <div class="container">
+          <nav class="main-navigation">
+            <div>
+              <a href="#">Katannamari</a>
+            </div>
+            <button type="button" aria-label="Avaa valikko" class="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu" role="menubar">
+              <li class="menu-item-mobile"><a href="#">Katannamari</a></li>
+              <li>
+                <a href="#about">Tietoja minusta</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li><a href="#cv">CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <button onclick="scrollToTop()" id="scroll-button" title="Sivun alkuun">
+          <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- HERO -->
+        <section class="hero">
+          <div class="container hero-container">
+            <h1 class="hero-h1">Katariina Varanka</h1>
+            <h2 class="hero-h2">Web Developer</h2>
+          </div>
+        </section>
+        <!-- ABOUT -->
+        <section id="about" class="about">
+          <div class="container about-container">
+            <div class="about-img">
+              <img
+                src="./images/userpic.jpeg"
+                alt="Esittelykuva"
+                class="img-responsive"
+              />
+            </div>
+            <div class="about-text">
+              <h2>Tervehdys!</h2>
+              <p>Olen kesällä 2021 valmistuva IT-tradenomi Oulusta.</p>
+              <p>Tykkään työskennellä käyttöliittymien parissa.</p>
+              <p>
+                Koodauksen lisäksi tykkään pelata videopelejä, laulaa sekä
+                tanssia.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="portfolio">
+          <div class="container portfolio-container">
+            <h2 class="portfolio-heading">Tässä muutamia projektejani</h2>
+            <ul class="portfolio-list">
+              <li class="portfolio-item">
+                <a
+                  href="https://katannamari.github.io/css-project/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="portfolio-item-content">
+                    <h3>CSS-animaatioita</h3>
+                    <p>Erilaisia CSS:n avulla tehtyjä siirtymiä ja efektejä</p>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-item-content">
+                  <h3>React-lista ja filtteröinti</h3>
+                  <p>Datan hakeminen ja listaus käyttäen Reactia</p>
+                  <p>[placeholder]</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-item-content">
+                  <h3>Whack-a-mole</h3>
+                  <p>Whack-a-mole-peli JavaScriptin avulla</p>
+                  <p>[placeholder]</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- CV -->
+        <section id="cv" class="cv">
+          <div class="container cv-container">
+            <h2 class="cv-h2">CV</h2>
+            <div class="cv-columns">
+              <div class="cv-column">
+                <h3>Yhteystiedot</h3>
+                <div id="contact"></div>
+                <h3>Kielitaito</h3>
+                <div id="languages"></div>
+                <h3>Osaamisalueet</h3>
+                <div id="skills"></div>
+                <h3>Koulutus</h3>
+                <div id="education"></div>
+              </div>
+              <div class="cv-column">
+                <h3>Työkokemus</h3>
+                <div id="work"></div>
+                <h3>Vapaaehtoistyö</h3>
+                <div id="volunteerWork"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-text">
+          <p>© Katariina Varanka</p>
+          <p id="copyright"></p>
+        </div>
+        <div class="footer-icons">
+          <div class="footer-icon">
+            <a
+              href="https://www.github.com/katannamari"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="footer-icon">
+            <a
+              href="https://www.linkedin.com/in/katariinavaranka"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
