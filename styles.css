@@ -47,9 +47,10 @@ body {
   /* scroll-behavior: smooth; */
 }
 
-/* .language-selection {
-  display: flex;
-} */
+.lang-selector {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
 
 .menu {
   display: flex;
