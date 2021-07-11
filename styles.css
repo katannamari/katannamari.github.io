@@ -47,6 +47,10 @@ body {
   /* scroll-behavior: smooth; */
 }
 
+/* .language-selection {
+  display: flex;
+} */
+
 .menu {
   display: flex;
   align-items: center;
