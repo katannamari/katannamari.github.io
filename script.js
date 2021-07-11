@@ -68,12 +68,12 @@ const educationEN = [
   {
     name: "Oulu University of Applied Sciences",
     duration: "2017 - 2021",
-    description: "Tietojenkäsittelyn koulutusohjelma",
+    description: "Information Technology",
   },
   {
-    name: "Utajärven lukio",
+    name: "Utajärvi Upper Secondary School",
     duration: "2007-2010",
-    description: "Ylioppilastutkinto",
+    description: "Matriculation examination",
   },
 ];
 
@@ -94,6 +94,42 @@ const work = [
     name: "Netplaza Oy - Siivooja",
     duration: "Syyskuu 2012 - Helmikuu 2013",
     description: "Toimistosiivous",
+  },
+  {
+    name: "Eezy Osk (laskutuspalvelu) - Siivooja",
+    duration: "Helmikuu 2012 - Toukokuu 2012",
+    description:
+      "Matkakeskus Supalle mökkisiivouksia, toimistotöitä ja liinavaatehuoltoa",
+  },
+  {
+    name: "Netplaza Oy - Toimistotyöt",
+    duration: "Maaliskuu 2011 - Elokuu 2012",
+    description:
+      "Keskusaluekarttojen piirtäminen, asiakasrekisterin päivitykset, yritystietojen hakeminen CRM-tietojärjestelmään, taloyhtiökohteiden kiertäminen ja infotaulujen päivittäminen",
+  },
+  {
+    name: "Mantelisilmä ky - Käännöstyöt",
+    duration: "2010",
+    description: "Englannin kielen käännöstöitä",
+  },
+];
+
+const workEN = [
+  {
+    name: "Riimu Games Ltd - 3D Artist",
+    duration: "January 2020 - June 2020",
+    description:
+      "Internship. Working with 3D modeling, texturing and animation in two game prototypes.",
+  },
+  {
+    name: "Maikkula Library - Work try-out",
+    duration: "April 2013 - August 2013",
+    description: "Customer service, information service, shelving materials",
+  },
+  {
+    name: "Netplaza Ltd - Cleaner",
+    duration: "September 2012 - February 2013",
+    description: "Office cleaning",
   },
   {
     name: "Eezy Osk (laskutuspalvelu) - Siivooja",
@@ -214,7 +250,7 @@ createMarkup(contactInfo, "contact");
 createMarkup(languages, "languages");
 createMarkup(skills, "skills");
 createMarkup(isEnglish ? educationEN : education, "education");
-createMarkup(work, "work");
+createMarkup(isEnglish ? workEN : work, "work");
 createMarkup(volunteerWork, "volunteerWork");
 
 // FOOTER
