@@ -1,3 +1,6 @@
+// Checks the language of document bc it's needed for correct cv data display
+const isEnglish = document.querySelector("html").getAttribute("lang") == "en";
+
 // MOBILE MENU
 
 const menuToggle = document.querySelector(".menu-toggle");
@@ -52,6 +55,18 @@ const scrollToTop = () => {
 const education = [
   {
     name: "Oulun Ammattikorkeakoulu - Tradenomi (AMK)",
+    duration: "2017 - 2021",
+    description: "Tietojenkäsittelyn koulutusohjelma",
+  },
+  {
+    name: "Utajärven lukio",
+    duration: "2007-2010",
+    description: "Ylioppilastutkinto",
+  },
+];
+const educationEN = [
+  {
+    name: "Oulu University of Applied Sciences",
     duration: "2017 - 2021",
     description: "Tietojenkäsittelyn koulutusohjelma",
   },
@@ -194,10 +209,11 @@ const createMarkup = (data, id) => {
   element.innerHTML = markup;
 };
 
+// Ternary operator checks doc language and displays correct cv markup
 createMarkup(contactInfo, "contact");
 createMarkup(languages, "languages");
 createMarkup(skills, "skills");
-createMarkup(education, "education");
+createMarkup(isEnglish ? educationEN : education, "education");
 createMarkup(work, "work");
 createMarkup(volunteerWork, "volunteerWork");
 
