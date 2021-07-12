@@ -132,21 +132,20 @@ const workEN = [
     description: "Office cleaning",
   },
   {
-    name: "Eezy Osk (laskutuspalvelu) - Siivooja",
-    duration: "Helmikuu 2012 - Toukokuu 2012",
-    description:
-      "Matkakeskus Supalle mökkisiivouksia, toimistotöitä ja liinavaatehuoltoa",
+    name: "Eezy - Cleaner",
+    duration: "February 2012 - May 2012",
+    description: "Cabin cleaning and office work for Travel Center Suppa",
   },
   {
-    name: "Netplaza Oy - Toimistotyöt",
-    duration: "Maaliskuu 2011 - Elokuu 2012",
+    name: "Netplaza Ltd - Office work",
+    duration: "March 2011 - August 2012",
     description:
-      "Keskusaluekarttojen piirtäminen, asiakasrekisterin päivitykset, yritystietojen hakeminen CRM-tietojärjestelmään, taloyhtiökohteiden kiertäminen ja infotaulujen päivittäminen",
+      "Drawing up maps, updating customer registry, updating CRM database with new enterprise data, updating customer apartment buildings' info boards",
   },
   {
-    name: "Mantelisilmä ky - Käännöstyöt",
+    name: "Mantelisilmä LP - Translating",
     duration: "2010",
-    description: "Englannin kielen käännöstöitä",
+    description: "English translation work",
   },
 ];
 
