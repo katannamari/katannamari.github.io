@@ -157,6 +157,16 @@ const volunteerWork = [
       "Vapaaehtoistyö Nuorten Ystävien Oulun seudun avopalvelukeskuksessa. Musiikkiryhmän ohjaajana toimiminen yhdessä ryhmän vastuuohjaajien kanssa",
   },
 ];
+const volunteerWorkEN = [
+  {
+    name: "Nuorten Ystävät",
+    duration: "Autumn 2017 - Spring 2018",
+    description:
+      "Vapaaehtoistyö Nuorten Ystävien Oulun seudun avopalvelukeskuksessa. Musiikkiryhmän ohjaajana toimiminen yhdessä ryhmän vastuuohjaajien kanssa",
+    description:
+      "Volunteer work at Nuorten Ystävät's Kintas unit, which is a mental health rehabilitation center for young adulta. Working as a peer tutor in a music group together with councelors.",
+  },
+];
 
 const contactInfo = [
   {
@@ -250,7 +260,7 @@ createMarkup(languages, "languages");
 createMarkup(skills, "skills");
 createMarkup(isEnglish ? educationEN : education, "education");
 createMarkup(isEnglish ? workEN : work, "work");
-createMarkup(volunteerWork, "volunteerWork");
+createMarkup(isEnglish ? volunteerWorkEN : volunteerWork, "volunteerWork");
 
 // FOOTER
 
