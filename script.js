@@ -195,6 +195,20 @@ const languages = [
     competency: "tyydyttävä",
   },
 ];
+const languagesEN = [
+  {
+    language: "Finnish",
+    competency: "Native language",
+  },
+  {
+    language: "English",
+    competency: "Fluent",
+  },
+  {
+    language: "Swedish",
+    competency: "Intermediate",
+  },
+];
 
 const skills = [
   {
@@ -256,7 +270,7 @@ const createMarkup = (data, id) => {
 
 // Ternary operator checks doc language and displays correct cv markup
 createMarkup(contactInfo, "contact");
-createMarkup(languages, "languages");
+createMarkup(isEnglish ? languagesEN : languages, "languages");
 createMarkup(skills, "skills");
 createMarkup(isEnglish ? educationEN : education, "education");
 createMarkup(isEnglish ? workEN : work, "work");
