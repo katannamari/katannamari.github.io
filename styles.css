@@ -483,7 +483,7 @@ body {
 }
 
 /* TABLET VERTICAL */
-@media screen and (max-width: 794px) {
+@media screen and (max-width: 768px) {
   /* MOBILE MENU */
   .menu-toggle {
     display: block;
@@ -531,7 +531,7 @@ body {
 }
 
 /* MOBILE HORIZONTAL */
-@media screen and (max-width: 628px) {
+@media screen and (max-width: 600px) {
   /* HERO TEXT */
   .hero-h1 {
     font-size: 2.5rem;
@@ -561,7 +561,7 @@ body {
   }
 }
 /* MOBILE VERTICAL */
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 480px) {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
