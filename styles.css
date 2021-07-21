@@ -514,6 +514,13 @@ body {
     display: block;
   }
 
+  /* SECTION HEADINGS */
+  .portfolio-heading,
+  .about-text h2,
+  .cv-h2 {
+    font-size: 2.5rem;
+  }
+
   /* HERO TEXT */
   .hero-h1 {
     font-size: 3rem;
@@ -532,6 +539,13 @@ body {
 
 /* MOBILE HORIZONTAL */
 @media screen and (max-width: 600px) {
+  /* SECTION HEADINGS */
+  .portfolio-heading,
+  .about-text h2,
+  .cv-h2 {
+    font-size: 2rem;
+  }
+
   /* HERO TEXT */
   .hero-h1 {
     font-size: 2.5rem;
@@ -542,20 +556,14 @@ body {
   }
 
   /* PORTFOLIO */
-
-  .portfolio-heading {
-    font-size: 2rem;
-  }
   .portfolio-item {
     width: 100%;
     margin-left: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   /* CV */
-  .cv-h2 {
-    font-size: 2rem;
-  }
-
   .cv-column h3 {
     font-size: 1.5rem;
   }
@@ -569,6 +577,8 @@ body {
   /* HERO TEXT */
   .hero-h1 {
     font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .hero-h2 {
