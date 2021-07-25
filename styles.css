@@ -30,6 +30,7 @@ body {
   right: 0;
   z-index: 9;
   background: #151f39;
+  padding: 0.25rem 0;
 }
 
 .main-navigation {
@@ -80,7 +81,7 @@ body {
   border: none;
   border-radius: 5%;
   position: fixed;
-  bottom: 1rem;
+  bottom: 2rem;
   right: 2rem;
   z-index: 99;
   cursor: pointer;
@@ -160,6 +161,7 @@ body {
   display: flex;
   justify-content: center;
   width: 50%;
+
   position: absolute;
   left: 0;
   top: 0;
@@ -170,6 +172,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 800px;
 }
 
 /* About text description */
@@ -357,6 +360,9 @@ body {
   justify-content: space-between;
   overflow: hidden;
   background-color: #0a0f1c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 5rem;
 }
 
 .footer-text {
@@ -406,7 +412,8 @@ body {
 
   .hero {
     min-height: unset;
-    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .hero-h1 {
