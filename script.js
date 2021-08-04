@@ -5,23 +5,46 @@ const isEnglish = document.querySelector("html").getAttribute("lang") == "en";
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mainMenu = document.querySelector(".menu");
+const menuLinks = mainMenu.querySelectorAll("a");
 
 // Toggle mobile menu
+
+const openMenu = () => {
+  mainMenu.classList.add("is-toggled");
+  console.log("open menu nappia painettu");
+
+  // adds the close icon
+  menuToggle.innerHTML = "<i class='fas fa-times'></i>";
+  menuToggle.setAttribute("aria-label", "Sulje valikko");
+};
+const closeMenu = () => {
+  mainMenu.classList.remove("is-toggled");
+
+  console.log("close menu nappia painettu");
+  // adds the menu icon
+  menuToggle.innerHTML = "<i class='fas fa-bars'></i>";
+  menuToggle.setAttribute("aria-label", "Avaa valikko");
+};
+
 const toggleMenu = () => {
   if (mainMenu.classList.contains("is-toggled")) {
-    mainMenu.classList.remove("is-toggled");
-
-    // adds the menu icon
-    menuToggle.innerHTML = "<i class='fas fa-bars'></i>";
-    menuToggle.setAttribute("aria-label", "Avaa valikko");
+    closeMenu();
   } else {
-    mainMenu.classList.add("is-toggled");
-
-    // adds the close icon
-    menuToggle.innerHTML = "<i class='fas fa-times'></i>";
-    menuToggle.setAttribute("aria-label", "Sulje valikko");
+    openMenu();
   }
 };
+
+// Loop through all menu links and check for click event,
+// in which case mobile menu is closed
+for (let i = 0; i < menuLinks.length; i++) {
+  const link = menuLinks[i];
+  console.log(link);
+  link.addEventListener("click", () => {
+    if (mainMenu.classList.contains("is-toggled")) {
+      closeMenu();
+    }
+  });
+}
 
 menuToggle.addEventListener("click", toggleMenu, false);
 
