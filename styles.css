@@ -70,13 +70,13 @@ body {
 .main-navigation a:focus,
 .menu-toggle:hover,
 .menu-toggle:focus {
-  color: #735cdd;
+  color: #4c5f66;
 }
 
 /* Scroll button */
 #scroll-button {
   display: none;
-  background-color: #ed254e;
+  background-color: #4c5f66;
   color: #e7ecef;
   border: none;
   border-radius: 5%;
@@ -91,8 +91,8 @@ body {
 
 #scroll-button:hover {
   transition: 0.3s;
-  color: #e7ecef;
-  background-color: #735cdd;
+  color: #fefefe;
+  background-color: #a9361e;
 }
 
 /* Mobile menu */
@@ -286,6 +286,7 @@ body {
   margin-bottom: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
 }
 
 /* .cv-container {
@@ -313,23 +314,32 @@ body {
   padding-right: 1rem;
   color: #0b0e21;
   font-family: "Roboto Mono", monospace;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .cv-column {
   width: calc(50% - 2rem);
 }
 
+.cv-column-left {
+  text-align: end;
+}
+
 .cv-column h3 {
   font-family: "Roboto Mono", monospace;
   margin-top: 5rem;
+  border-bottom: 1px solid #151f39;
+}
+
+.cv-column-right .cv-item-name {
+  color: #a9361e;
 }
 
 .cv-item {
   list-style-type: none;
-  text-align: left;
+  /* text-align: left; */
 
-  padding-right: 2rem;
+  padding-right: 0.1rem;
   padding-left: 0;
 }
 
@@ -341,7 +351,7 @@ body {
 .cv-item a:hover,
 .cv-item a:focus {
   transition: 0.3s;
-  color: #735cdd;
+  color: #4c5f66;
 }
 
 .cv-item a:visited {
@@ -356,7 +366,7 @@ body {
 }
 
 .cv-item-description {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-top: 0.3rem;
   line-height: 1.5;
 }

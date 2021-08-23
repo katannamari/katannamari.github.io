@@ -278,7 +278,9 @@ const createMarkup = (data, id) => {
     markup += data[i].language
       ? `<li class="cv-item">${data[i].language} - ${data[i].competency}</li>`
       : "";
-    markup += data[i].name ? `<li class="cv-item">${data[i].name}</li>` : "";
+    markup += data[i].name
+      ? `<li class="cv-item cv-item-name">${data[i].name}</li>`
+      : "";
     markup += data[i].duration
       ? `<li class="cv-item-duration">${data[i].duration}</li>`
       : "";
