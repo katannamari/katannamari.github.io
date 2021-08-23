@@ -194,7 +194,6 @@ body {
 .about-text h2 {
   font-size: 4rem;
   font-family: "Special Elite", cursive;
-  font-weight: lighter;
 }
 
 /* PORTFOLIO */
@@ -466,7 +465,7 @@ body {
   }
 
   .about-text {
-    background-color: #e7ecef;
+    background-color: #fefefe;
     width: 100%;
     font-size: 1rem;
   }
@@ -491,7 +490,15 @@ body {
   .cv-columns {
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .cv-column-left {
+    text-align: start;
+  }
+
+  .cv-column-right .cv-item-name {
+    color: #0b0e21;
   }
 
   .cv-h2 {
@@ -499,7 +506,6 @@ body {
   }
 
   .cv-item-duration {
-    text-transform: revert;
     font-size: 1.1rem;
   }
 
