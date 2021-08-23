@@ -3,7 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: #151f39;
+  background: #fefefe;
   scroll-behavior: smooth;
 }
 
@@ -29,7 +29,7 @@ body {
   left: 0;
   right: 0;
   z-index: 9;
-  background: #151f39;
+  background: #0b0e21;
   padding: 0.25rem 0;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .main-navigation a {
-  color: #e7ecef;
+  color: #fefefe;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
   transition: all 0.5s ease;
@@ -99,7 +99,7 @@ body {
 .menu-toggle {
   display: none;
   background: none;
-  color: #e7ecef;
+  color: #fefefe;
   border: none;
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -113,8 +113,9 @@ body {
 /* HERO */
 .hero {
   display: flex;
-  background: #151f39;
+  background: #fefefe;
   min-height: 100vh;
+  border-bottom: 5px solid #0b0e21;
 }
 
 .hero-container {
@@ -125,14 +126,14 @@ body {
 }
 
 .hero-h1 {
-  color: #e7ecef;
+  color: #0b0e21;
   font-size: 6rem;
   font-family: "Special Elite", cursive;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 .hero-h2 {
-  color: #e7ecef;
+  color: #0b0e21;
   font-size: 3rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
@@ -145,7 +146,8 @@ body {
   position: relative;
   /* min-height: 100vh; */
   display: flex;
-  background: #e7ecef;
+  background: #fefefe;
+  border-bottom: 5px solid #0b0e21;
 }
 
 .about-container {
@@ -183,7 +185,7 @@ body {
   justify-content: center;
   text-align: center;
   width: 50%;
-  color: #0a0f1c;
+  color: #0b0e21;
   font-size: 2rem;
   font-family: "Roboto Mono", monospace;
   padding: 2rem;
@@ -199,11 +201,12 @@ body {
 
 .portfolio {
   display: flex;
+  border-bottom: 5px solid #0b0e21;
   /* min-height: 100vh; */
 }
 
 .portfolio-container {
-  background: #151f39;
+  background: #fefefe;
   width: 100%;
   overflow: auto;
   align-items: center;
@@ -213,9 +216,9 @@ body {
 }
 
 .portfolio-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Special Elite", cursive;
-  color: #e7ecef;
+  color: #0b0e21;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -253,18 +256,19 @@ body {
 }
 
 .portfolio-item-content {
-  color: #0a0f1c;
+  color: #0b0e21;
   width: 100%;
   height: 100%;
   padding: 2rem;
   transition: 0.5s;
   border-radius: 2rem;
-  background-color: #e7ecef;
+  background-color: #fefefe;
+  border: 5px solid #0b0e21;
 }
 
 .portfolio-item-content:hover {
-  background: #ed254e;
-  color: #e7ecef;
+  background: #4c5f66;
+  color: #fefefe;
 }
 
 /* CV */
@@ -273,9 +277,9 @@ body {
 }
 
 .cv-h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Special Elite", cursive;
-  color: #e7ecef;
+  color: #0b0e21;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -307,7 +311,7 @@ body {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: #e7ecef;
+  color: #0b0e21;
   font-family: "Roboto Mono", monospace;
   font-size: 2rem;
 }
@@ -331,7 +335,7 @@ body {
 
 .cv-item a {
   text-decoration: none;
-  color: #e7ecef;
+  color: #0b0e21;
 }
 
 .cv-item a:hover,
@@ -341,7 +345,7 @@ body {
 }
 
 .cv-item a:visited {
-  color: #e7ecef;
+  color: #0b0e21;
 }
 
 .cv-item-duration {
@@ -363,7 +367,7 @@ body {
   width: 100%;
   justify-content: space-between;
   overflow: hidden;
-  background-color: #0a0f1c;
+  background-color: #0b0e21;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 5rem;
@@ -371,7 +375,7 @@ body {
 
 .footer-text {
   display: flex;
-  color: #e7ecef;
+  color: #fefefe;
   font-size: 1rem;
   font-family: "Roboto Mono", monospace;
   margin-left: 2rem;
@@ -383,7 +387,7 @@ body {
 .footer-icons {
   display: flex;
   justify-content: space-between;
-  color: #e7ecef;
+  color: #fefefe;
   margin-right: 4rem;
   padding-top: 0.5rem;
 }
