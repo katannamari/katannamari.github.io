@@ -143,8 +143,6 @@ body {
   color: #0b0e21;
   font-size: 6rem;
   font-family: "Special Elite", cursive;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 /* Typewriter effect */
@@ -162,8 +160,6 @@ body {
   font-size: 3rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 /* ABOUT */
@@ -349,10 +345,6 @@ body {
 
 .cv-item {
   list-style-type: none;
-  /* text-align: left; */
-
-  padding-right: 0.1rem;
-  padding-left: 0;
 }
 
 .cv-item a {
@@ -438,6 +430,11 @@ body {
 
 /* TABLET HORIZONTAL */
 @media screen and (max-width: 992px) {
+  /* MENU */
+  .main-navigation {
+    font-size: 1.25rem;
+  }
+
   /* HERO TEXT */
 
   .hero {
@@ -448,7 +445,7 @@ body {
   }
 
   .hero-h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
   }
 
@@ -489,6 +486,10 @@ body {
   }
 
   /* PORTFOLIO */
+
+  .portfolio-heading {
+    font-size: 3.5rem;
+  }
   .portfolio-list {
     /* align-items: center; */
     font-size: 1.2rem;
@@ -516,6 +517,7 @@ body {
   }
 
   .cv-h2 {
+    font-size: 3.5rem;
     text-align: center;
   }
 
@@ -596,8 +598,6 @@ body {
   /* HERO TEXT */
   .hero-h1 {
     font-size: 2.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     animation: none;
   }
 
@@ -609,13 +609,33 @@ body {
   .portfolio-item {
     width: 100%;
     margin-left: 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* CV */
   .cv-column h3 {
     font-size: 1.5rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer-text {
+    margin-left: 0;
+  }
+
+  .footer-icons {
+    margin-right: 0;
+  }
+
+  .footer-icon {
+    padding: 0.3rem;
   }
 }
 /* MOBILE VERTICAL */
@@ -628,9 +648,18 @@ body {
   .hero-h1 {
     font-size: 1.8rem;
     text-align: center;
+    padding: 0;
   }
 
   .hero-h2 {
     font-size: 1.2rem;
+    padding: 0;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
