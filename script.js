@@ -11,7 +11,6 @@ const menuLinks = mainMenu.querySelectorAll("a");
 
 const openMenu = () => {
   mainMenu.classList.add("is-toggled");
-  console.log("open menu nappia painettu");
 
   // adds the close icon
   menuToggle.innerHTML = "<i class='fas fa-times'></i>";
@@ -19,8 +18,6 @@ const openMenu = () => {
 };
 const closeMenu = () => {
   mainMenu.classList.remove("is-toggled");
-
-  console.log("close menu nappia painettu");
   // adds the menu icon
   menuToggle.innerHTML = "<i class='fas fa-bars'></i>";
   menuToggle.setAttribute("aria-label", "Avaa valikko");
@@ -38,7 +35,6 @@ const toggleMenu = () => {
 // in which case mobile menu is closed
 for (let i = 0; i < menuLinks.length; i++) {
   const link = menuLinks[i];
-  console.log(link);
   link.addEventListener("click", () => {
     if (mainMenu.classList.contains("is-toggled")) {
       closeMenu();
