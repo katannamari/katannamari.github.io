@@ -202,6 +202,8 @@ body {
   display: flex;
   border-bottom: 5px solid #0b0e21;
   /* min-height: 100vh; */
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .portfolio-container {
