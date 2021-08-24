@@ -598,6 +598,7 @@ body {
     font-size: 2.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    animation: none;
   }
 
   .hero-h2 {
