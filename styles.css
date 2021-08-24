@@ -450,8 +450,6 @@ body {
   .hero-h1 {
     font-size: 4rem;
     text-align: center;
-    letter-spacing: initial;
-    /* animation: none; */
   }
 
   .hero-h2 {
@@ -572,6 +570,7 @@ body {
   /* HERO TEXT */
   .hero-h1 {
     font-size: 3rem;
+    letter-spacing: initial;
   }
 
   .hero-h2 {
@@ -626,7 +625,7 @@ body {
   }
   /* HERO TEXT */
   .hero-h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
