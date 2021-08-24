@@ -125,13 +125,38 @@ body {
   align-items: center;
 }
 
+.hero-typewriter {
+  overflow: hidden; /* Content is not revealed until the animation */
+  border-right: 0.15em solid #0b0e21;
+}
+
 .hero-h1 {
+  /* Content is not revealed until the animation:  */
+  overflow: hidden;
+  /* Keeps content on single line: */
+  white-space: nowrap;
+
+  /* Scrolling effect with typing: */
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end);
   color: #0b0e21;
   font-size: 6rem;
   font-family: "Special Elite", cursive;
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+/* Typewriter effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .hero-h2 {
   color: #0b0e21;
   font-size: 3rem;
@@ -290,20 +315,6 @@ body {
   text-align: center;
 }
 
-/* .cv-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: #e7ecef;
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-} */
-
 .cv-columns {
   display: flex;
   width: 100%;
@@ -439,6 +450,8 @@ body {
   .hero-h1 {
     font-size: 4rem;
     text-align: center;
+    letter-spacing: 0.1em;
+    /* animation: none; */
   }
 
   .hero-h2 {
