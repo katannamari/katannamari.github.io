@@ -296,6 +296,7 @@ body {
 /* CV */
 .cv {
   display: flex;
+  padding-top: 3rem;
 }
 
 .cv-h2 {
@@ -646,7 +647,7 @@ body {
   }
   /* HERO TEXT */
   .hero-h1 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     text-align: center;
     padding: 0;
   }
@@ -654,6 +655,18 @@ body {
   .hero-h2 {
     font-size: 1.2rem;
     padding: 0;
+  }
+
+  /* SECTION HEADER FONTS */
+  .about-text h2,
+  .portfolio-heading,
+  .cv-h2 {
+    font-size: 1.75rem;
+  }
+
+  /* CV LINK */
+  .cv-item a {
+    word-break: break-all;
   }
 
   /* Footer */
