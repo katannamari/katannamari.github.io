@@ -100,8 +100,7 @@ const work = [
   {
     name: "Cinia Oy - Tietoverkkojen dokumentoija",
     duration: "Syyskuu 2021 -",
-    description:
-      "Tietojen tarkistaminen ja päivittäminen yhtiön verkkotietojärjestelmässä.",
+    description: "Tietoverkkojen dokumentaation tarkistus ja päivitys",
   },
   {
     name: "Riimu Games Oy - 3D-artisti",
@@ -143,8 +142,7 @@ const workEN = [
   {
     name: "Cinia Ltd - Network documentation",
     duration: "September 2021 -",
-    description:
-      "Verifying and updating information in the company's network database.",
+    description: "Verifying and updating network documentation",
   },
   {
     name: "Riimu Games Ltd - 3D Artist",
