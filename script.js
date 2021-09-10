@@ -98,6 +98,12 @@ const educationEN = [
 
 const work = [
   {
+    name: "Cinia Oy - Tietoverkkojen dokumentoija",
+    duration: "Syyskuu 2021 -",
+    description:
+      "Tietojen tarkistaminen ja päivittäminen yhtiön verkkotietojärjestelmässä.",
+  },
+  {
     name: "Riimu Games Oy - 3D-artisti",
     duration: "Tammikuu 2020 - Kesäkuu 2020",
     description:
@@ -134,6 +140,12 @@ const work = [
 ];
 
 const workEN = [
+  {
+    name: "Cinia Ltd - Network documentation",
+    duration: "September 2021 -",
+    description:
+      "Verifying and updating information in the company's network database.",
+  },
   {
     name: "Riimu Games Ltd - 3D Artist",
     duration: "January 2020 - June 2020",
